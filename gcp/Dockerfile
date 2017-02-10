@@ -7,7 +7,8 @@ RUN     apk --no-cache add -X http://dl-cdn.alpinelinux.org/alpine/edge/testing 
             build-base \
             py2-pip \
             python2-dev \
-            openssl-dev && \
+            openssl-dev \
+            libffi-dev && \
         pip install gsutil && \
         apk --no-cache add curl && \
         apk del .build-deps
