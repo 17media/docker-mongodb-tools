@@ -11,7 +11,8 @@ RUN     apk --no-cache add -X http://dl-cdn.alpinelinux.org/alpine/edge/testing 
             libffi-dev && \
         apk --no-cache add --virtual .run-deps \
             python2 \
-            py2-pip && \
+            py2-pip \
+            openssl && \
         pip install gsutil pyopenssl && \
         apk --no-cache add curl && \
         apk del .build-deps
