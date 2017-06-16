@@ -21,10 +21,7 @@ RUN         apk add --no-cache --virtual .build-deps \
             ) && \
             ln -s /usr/src/google-cloud-sdk/bin/* /usr/local/bin/. && \
             pip install --force -I crcmod && \
-            apk --no-cache add python && \
             apk --no-cache add --virtual .rundeps \
-                -X http://dl-cdn.alpinelinux.org/alpine/edge/main \
-                -X http://dl-cdn.alpinelinux.org/alpine/edge/community \
-                -X http://dl-cdn.alpinelinux.org/alpine/edge/testing  \
-            mongodb-tools && \
+                python \
+                mongodb-tools && \
             apk del .build-deps
