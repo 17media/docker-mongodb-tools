@@ -1,10 +1,5 @@
 FROM        alpine:3.6
 
-
-            # HACK: Need to force gcloud to not use GCE mode
-RUN         mkdir -p /root/.config/gcloud && \
-            echo "False" > /root/.config/gcloud/gce
-
             # hubot-mongodump: Add gcloud, mongodb-tools
 RUN         apk add --no-cache --virtual .build-deps \
                 curl \
