@@ -1,4 +1,4 @@
-FROM        alpine:3.5
+FROM        alpine:3.6
 
 
             # HACK: Need to force gcloud to not use GCE mode
