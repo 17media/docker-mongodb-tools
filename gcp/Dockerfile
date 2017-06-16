@@ -1,6 +1,6 @@
 FROM        alpine:3.6
 
-            # hubot-mongodump: Add gcloud, mongodb-tools
+            # Add gcloud, mongodb-tools
 RUN         apk add --no-cache --virtual .build-deps \
                 curl \
                 ca-certificates \
