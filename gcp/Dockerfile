@@ -1,6 +1,7 @@
 FROM        alpine:3.6
 
             # Add gcloud, mongodb-tools
+            # TODO: google-cloud-sdk will be available on Alpine soon
 RUN         apk add --no-cache --virtual .build-deps \
                 curl \
                 ca-certificates \
